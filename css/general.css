@@ -1,0 +1,370 @@
+/* Fonts */
+
+@font-face {
+  font-family: "AnticDidone"; 
+  src: url(../fonts/AnticDidone-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Didot"; 
+  src: url(../fonts/GFSDidot-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "AnticDidone";
+  background-color: #D8D2C6;
+  color: black;
+}
+
+/* Nav bar */
+header nav {
+  background-color: #A4A385;
+  stroke: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+header h1 {
+  font-family: "Didot";
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+/* ================= MOBILE FIRST ================= */
+  
+
+  /* Forside */
+
+  .forside {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.selfie, .hest {
+  width: 100%;
+  height: 100%;
+}
+
+.forsidetekst {
+    text-align: center;
+}
+
+.forsidetekst h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.forsidetekst p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+  
+  /* Om mig side */
+  .intro-ommig h2 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .grid-section {
+    padding: 1rem;
+    background-color: #D8D2C6;
+  }
+  
+  .grid-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .text-block {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #D8D2C6;
+    margin: auto;
+    max-width: 100%;
+  }
+  
+  .text-block h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .text-block p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* Portfolio side */
+
+  .tema h2 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .tema h3 {
+    text-align: center;
+  }
+
+  .text-block-2 {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #D8D2C6;
+    margin: auto;
+    max-width: 100%;
+  }
+  
+  .text-block-2 h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .text-block-2 p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .grid-section-2 {
+    padding: 1rem;
+    background-color: #D8D2C6;
+  }
+  
+  .grid-section-2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Tema sider */
+
+  .temabeskrivelser p{
+    text-align: left;
+    margin-left: auto;
+  }
+
+  .site p{
+    text-align: center;
+    font-weight: bold;
+      }
+
+  
+  /* Footer */
+  footer {
+    background-color: #D8D2C6;
+    padding: 1rem;
+    text-align: right;
+  }
+  
+  footer .icons img {
+    width: 20px;
+    margin-left: 10px;
+  }
+  
+  h1 {
+    font-family: "Didot";
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-family: "Didot";
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-family: "Didot";
+    font-size: 22px;
+  }
+  
+  p {
+    font-family: "AnticDidone";
+    font-size: 14px;
+  }
+
+/* Tilbageknap */
+
+.back-button {
+  position:absolute;
+  top: 205px;
+  left: 16px;
+  padding: 3px 7px;
+  background-color: #A4A385;
+  color: #D8D2C6;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+.back-button:hover {
+  background-color: #504f3e;
+}
+
+/* lottiefile */
+.lottie{
+  align-items: center;
+}
+
+/* ================= DESKTOP ================= */
+  @media (min-width: 750px) {
+    header nav {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    header h1 {
+      font-size: 96px;
+    }
+
+    /* Forside desktop */
+
+    .forside {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .selfie, .hest {
+    flex: 1;
+    min-width: 300px;
+    width: 50%;
+    margin-bottom: 0;
+    height: auto;
+}
+
+.forsidetekst {
+    width: 100%;
+    order: 3;
+}
+  /* Om mig side */
+    .intro-ommig h2 {
+      font-size: 50px;
+    }
+  
+    .grid-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  
+    .text-block {
+      max-width: 60%;
+    }
+  
+    .text-block h3 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  
+    h1 {
+      font-size: 96px;
+    }
+  
+    h2 {
+      font-size: 50px;
+    }
+  
+    h3 {
+      font-size: 36px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+
+    /* Portfolioside */
+
+    .tema h2 {
+      font-size: 50px;
+    }
+  
+    .grid-section-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .grid-section-2 img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .text-block-2 {
+      max-width: 60%;
+    }
+  
+    .text-block-2 h3 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  
+    h1 {
+      font-size: 96px;
+    }
+  
+    h2 {
+      font-size: 50px;
+    }
+  
+    h3 {
+      font-size: 36px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+
+    /* Tilbageknap */
+  .back-button {
+    position:absolute;
+    top: 185px;
+    left: 30px;
+    padding: 10px 15px;
+    background-color: #A4A385;
+    color: #D8D2C6;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+  .back-button:hover {
+    background-color: #504f3e;
+}
+
+/* lottiefile */
+.lottie{
+  margin-left: 500px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+  }
